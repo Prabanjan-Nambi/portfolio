@@ -1,0 +1,218 @@
+:root{
+    --color: #C70300;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Slab";
+}
+
+html{
+   font-size: 16px;
+}
+
+body{
+    margin: 0;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p{
+    text-align: center;
+    width: 100%;
+    font-size: 0.75rem;
+    margin: 0 0 0.9em 0;
+}
+
+.pf-header-content{
+   position: relative;
+}
+
+.pf-header-links{
+   position: absolute;
+   right: 2%;
+   top: 4%;
+   width: 20%;
+}
+
+.pf-header-links a{
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.pf-header-links a:first-child{
+    margin-right: 7%;
+}
+
+.pf-header-img-container{
+    height: 35vh;
+    position: relative;
+}
+
+.pf-header-img{
+   height: 100%;
+   max-width: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.pf-header-profile{
+   position: absolute;
+   margin: auto;
+   height: 22vh;
+   width: 20%;
+   top: 90%;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   text-align: center;
+}
+
+@media screen and (max-width: 660px){
+    .pf-header-profile{
+        width: 40%;
+    }
+    html{
+        font-size: 10px;
+    }
+}
+
+.pf-profile-img{
+   border-radius: 50%;
+   height: 100%;
+   max-width: 100%;
+}
+
+.pf-about p, .pf-about h2{
+    text-align: center;
+}
+
+.pf-about p:first-child{
+    font-size: 1rem;
+}
+
+.pf-about p:nth-child(n+2){
+    font-size: 1rem;
+    color: var(--color);
+    font-weight: bold;
+}
+
+.pf-about p:nth-child(n+3){
+    color: inherit;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+main{
+    margin-top: 5%;
+}
+
+@media screen and (max-width: 900px){
+    main{
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width: 700px){
+     main{
+         margin-top: 9%;
+     }
+}
+
+@media screen and (max-width: 660px){
+    main{
+        margin-top: 12%;
+    }
+
+    .pf-technologies-list{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+
+    .pf-companies-list{
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+    }
+}   
+
+.pf-technologies{
+    height: 52vh;
+    background-color: #F0F0F0;
+    margin-top: 4%;
+    overflow: hidden;
+}
+
+.pf-technologies p:first-child{
+    text-align: center;
+    margin: 3% 0 4% 0;
+    font-weight: 900;
+}
+
+.pf-companies{
+    height: 52vh;
+    background: url(../assets/tall-buildings.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: -1px;
+    overflow: hidden;
+}
+
+.pf-companies p:first-child{
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 900;
+}
+
+.pf-steve-quote{
+    height: 35vh;
+    background: var(--color);
+}
+
+.pf-steve-quote-content{
+    color: var(--white);
+    font-weight: 100;
+    text-align: center;
+    font-size: 1rem;
+    white-space: break-spaces;
+    display: inline-block;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.pf-technologies-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pf-technologies-item{
+    width: 10%;
+}
+
+.pf-technologies-item img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+.pf-companies-list{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pf-companies-item{
+    width: 10%;
+}
+
+.pf-companies-item img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
