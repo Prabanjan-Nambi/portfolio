@@ -76,6 +76,7 @@ footer p{
 @media screen and (max-width: 660px){
     .pf-header-profile{
         width: 40%;
+        height: 16vh !important;
     }
     html{
         font-size: 10px;
@@ -133,12 +134,18 @@ main{
         flex-direction: column !important;
         align-items: center !important;
         justify-content: space-between !important;
+        height: 80%;
     }
 
     .pf-companies-list{
         flex-direction: column !important;
         align-items: center !important;
         justify-content: space-between !important;
+        height: 40%;
+    }
+
+    .pf-steve-quote-content{
+        white-space: pre-line !important;
     }
 }   
 
