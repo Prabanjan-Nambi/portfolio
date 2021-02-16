@@ -73,7 +73,7 @@ footer p{
    text-align: center;
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 600px){
     .pf-header-profile{
         width: 40%;
         height: 16vh !important;
@@ -125,7 +125,7 @@ main{
      }
 }
 
-@media screen and (max-width: 660px){
+@media screen and (max-width: 600px){
     main{
         margin-top: 12%;
     }
